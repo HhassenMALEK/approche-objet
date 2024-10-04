@@ -7,6 +7,5 @@ public class TestAdressePostale {
 
          AdressePostale adr2 = new AdressePostale(18,"Rue de la République", 85600, "Les Herbiers");
 
-
      }
 }

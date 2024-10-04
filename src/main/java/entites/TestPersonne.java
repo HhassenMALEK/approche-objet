@@ -13,5 +13,16 @@ public class TestPersonne {
         Personne personne1 = new Personne("MALEK", "Hassen", adr1);
 
         Personne personne2 = new Personne("MALEK", "Ilyes", adr2);
+
+        personne1.afficher();
+
+        personne1.modifierNom("GIRARD");
+        personne1.modifierPrenom("Anne Laure");
+        personne1.afficher();
+
+        personne1.modifierAdressePostal(adr2);
+        personne1.afficher();
+
     }
+
 }
