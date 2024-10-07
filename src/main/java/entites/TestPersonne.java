@@ -16,12 +16,22 @@ public class TestPersonne {
 
         personne1.afficher();
 
-        personne1.modifierNom("GIRARD");
+        personne1.setNom("girard");
+        personne1.afficher();
+
+        AdressePostale adr3 = new AdressePostale(12, "rue de la libérté", 75004, "PARIS");
+        personne1.setAdresse(adr3);
+        personne1.afficher();
+        personne1.setPrenom("Anne Laure");
+        personne1.afficher();
+
+        /*personne1.modifierNom("GIRARD");
         personne1.modifierPrenom("Anne Laure");
         personne1.afficher();
 
         personne1.modifierAdressePostal(adr2);
         personne1.afficher();
+        */
 
     }
 
