@@ -3,6 +3,8 @@ package banque;
 import banque.entites.Compte;
 import banque.entites.CompteTaux;
 
+import java.util.Arrays;
+
 public class TestBanque{
     public static void main(String[] args) {
         Compte cpt = new Compte("51544151kj7", 1500.0);
@@ -17,7 +19,8 @@ public class TestBanque{
         comptes[1] = new CompteTaux("95683211", 2000, 4);
 
         for(int i =0; i < comptes.length; i++){
-            System.out.println(i+1 +"-"+  comptes[i]);
+            System.out.println(i+1 +"-" + comptes[i]);
         }
+        System.out.println(Arrays.toString(comptes));
     }
 }
