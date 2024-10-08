@@ -1,13 +1,14 @@
 package banque.entites;
 
 public abstract class Operation {
-    protected String date;
-    protected double montant;
+    private String date;
+    private double montant;
 
     public Operation(String date, double montant) {
         this.date = date;
         this.montant = montant;
     }
+    public abstract String getType();
 
     public String toString(){
         return "la date: " + date + ", le montant: " +  montant;
@@ -27,6 +28,5 @@ public abstract class Operation {
     public void setMontant(double montant) {
         this.montant = montant;
     }
-    public abstract String getType();
 
 }

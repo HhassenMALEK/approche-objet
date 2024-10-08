@@ -6,7 +6,8 @@ package banque.entites;
     public Credit(String date, double montant) {
         super(date, montant);
     }
-        public String getType(){
+    @Override
+    public String getType(){
             return "Credit";
         }
 }
