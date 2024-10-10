@@ -11,10 +11,7 @@ public class Ville {
 
     @Override
     public String toString() {
-        return "Ville{" +
-                "nbHabs=" + nbHabs +
-                ", nom='" + nom + '\'' +
-                '}';
+        return nom +" "+nbHabs;
     }
 
     public int getNbHabs() {
