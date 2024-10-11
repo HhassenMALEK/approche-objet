@@ -1,7 +1,7 @@
 package diginamic.maison;
 
 public class Chambre extends Piece{
-    public Chambre(double superficie, int numeroEtage){
-        super(superficie, numeroEtage);
+    public Chambre(String nom, double superficie, int numeroEtage){
+        super(nom, superficie, numeroEtage);
     }
 }

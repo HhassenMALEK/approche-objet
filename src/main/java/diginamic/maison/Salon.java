@@ -1,8 +1,7 @@
 package diginamic.maison;
 
-public class Salon extends Piece{
-    public Salon(double superficie, int numeroEtage){
-
-        super(superficie, numeroEtage);
+public class Salon extends Piece {
+    public Salon(String nom, double superficie, int numeroEtage) {
+        super(nom, superficie, numeroEtage);
     }
 }
