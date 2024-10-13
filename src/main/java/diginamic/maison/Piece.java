@@ -27,5 +27,7 @@ public abstract class Piece {
     public int getNumeroEtage() {
 
         return numeroEtage;
+
+
     }
 }

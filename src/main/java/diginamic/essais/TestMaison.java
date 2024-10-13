@@ -14,6 +14,10 @@ public class TestMaison {
         maison.ajouterPiece(new Chambre("Chambre enfant2", 11, 1));
         maison.ajouterPiece(new Salon("Salon", 13, 1));
 
+        double superficieEtage1 = maison.calculerSuperficieEtage(1);
+        System.out.println("la superficie de l'étage 1 : " +superficieEtage1);
+        double superficieTypepieces = maison.calculerSuperficieParType(Chambre.class);
+        System.out.println(superficieTypepieces);
 
     }
 }
