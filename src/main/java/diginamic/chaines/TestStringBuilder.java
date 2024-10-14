@@ -18,6 +18,14 @@ public class TestStringBuilder {
             s += i;
         }
         long finString = System.currentTimeMillis();
-        System.out.println("Temps écoulé avec String et concaténation : " + (finString - debutString) + " millisecondes");
+        System.out.println("Temps écoulé avec  +  et concaténation : " + (finString - debutString) + " millisecondes");
+
+        long debutConcat = System.currentTimeMillis();
+        String c = "";
+        for (int i = 0; i < 100000; i++) {
+            c = c.concat(String.valueOf(i));  // Conversion de int en String
+        }
+        long finConcat = System.currentTimeMillis();
+        System.out.println("Temps écoulé avec Concat et concaténation : " + (finConcat - debutConcat) + " millisecondes");
     }
 }
