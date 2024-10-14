@@ -23,7 +23,7 @@ public class TestStringBuilder {
         long debutConcat = System.currentTimeMillis();
         String c = "";
         for (int i = 0; i < 100000; i++) {
-            c = c.concat(String.valueOf(i));  // Conversion de int en String
+            c = c.concat(String.valueOf(i));
         }
         long finConcat = System.currentTimeMillis();
         System.out.println("Temps écoulé avec Concat et concaténation : " + (finConcat - debutConcat) + " millisecondes");
